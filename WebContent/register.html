@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.container1 {
+position: relative;
+top: 182px;
+}
+.text1{
+font-family: 微软雅黑;
+}
+</style>
+<script type="text/javascript" src="register.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link title="orange" href="css/register.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body style="text-align:center;">
+  <div class="container1">
+   <h1>注册页面</h1>
+   <form name="form" action="register">
+	 <span class="text1">编号：</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uid" id="uid"><br>
+	 <span class="text1">用户姓名：</span><input type="text" name="username" id="username"><br>
+	 <span class="text1">密码：</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password1" id="password1"><br>
+	 <span class="text1">确认密码：</span><input type="password" name="password2" id="password2"><br>
+	<span style="position: relative; left: -95px;" class="text1">权限：</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <select name="superuser" style="margin-left: -135px;">
+	   <option Selected value="1">管理员</option>
+	   <option value="2">普通用户</option>
+	 </select><br>
+	 <input type="submit" value="注册" onclick="return check();" style="font-size: 24px; padding: 4px 14px; margin-top: 18px;">
+   </form>
+   </div>
+  </body>
+</html>

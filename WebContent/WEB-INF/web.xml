@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+      <servlet-name>HelloServlet01</servlet-name>
+      <servlet-class>cn.edu.lingnan.test.HelloServlet01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>HelloServlet01</servlet-name>
+      <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <!-- <servlet>
+      <servlet-name>LoginServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>LoginServlet</servlet-name>
+      <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <filter>
+     <filter-name>AuthorityFilter</filter-name>
+     <filter-class>cn.edu.lingnan.filter.AuthorityFilter</filter-class>
+  </filter>
+  <filter-mapping>
+     <filter-name>AuthorityFilter</filter-name>
+     <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>  -->
+  <servlet>
+      <servlet-name>UserDeleteServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.UserDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>UserDeleteServlet</servlet-name>
+      <url-pattern>/admin/deleteUser</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.18 -->
+  <servlet>
+      <servlet-name>RegisterServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>RegisterServlet</servlet-name>
+      <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.19 -->
+  <servlet>
+      <servlet-name>ProgramDeleteServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.ProgramDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ProgramDeleteServlet</servlet-name>
+      <url-pattern>/admin/deleteProgram</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.20 -->
+  <servlet>
+      <servlet-name>JoinServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.JoinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>JoinServlet</servlet-name>
+      <url-pattern>/joinpro</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.20 -->
+  <servlet>
+      <servlet-name>InsertServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.InsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>InsertServlet</servlet-name>
+      <url-pattern>/joinprogram</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.20 -->
+  <servlet>
+      <servlet-name>FindServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.FindServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>FindServlet</servlet-name>
+      <url-pattern>/findpro1</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.20 -->
+  <servlet>
+      <servlet-name>DeleteServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>DeleteServlet</servlet-name>
+      <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.20 -->
+  <servlet>
+      <servlet-name>ShowServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.ShowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ShowServlet</servlet-name>
+      <url-pattern>/admin/findshow</url-pattern>
+  </servlet-mapping>
+  <!-- 2019.12.23 -->
+  <servlet>
+      <servlet-name>ScoreDeleteServlet</servlet-name>
+      <servlet-class>cn.edu.lingnan.servlet.ScoreDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>ScoreDeleteServlet</servlet-name>
+      <url-pattern>/admin/deleteScore</url-pattern>
+  </servlet-mapping>
+</web-app>
